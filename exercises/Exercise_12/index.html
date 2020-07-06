@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Create User - Ex 12</title>
+    <style>
+      li{
+        list-style-type:none;
+        margin-left: -20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Create User</h1>
+    <hr>
+    <form action="create_user.html" method="get" enctype="application/x-www-form-urlencoded" >
+      <fieldset>
+        <p><label>Username:</label>
+        <input type="text" name="username" placeholder="username" size="30" maxlength="12"></p>
+        <legend>User Form</legend>
+        <p><label>Password:</label>
+        <input type="password" name="password" placeholder="password" size="30" maxlength="8"></p>
+        <p><label>Select your favourite superheroe</label></p>
+        <ul>
+            <li><input type="radio" name="superheros" value="superman">Superman</li>
+            <li><input type="radio" name="superheros" value="batman" checked>Batman</li>
+            <li><input type="radio" name="superheros" value="wonderwoman">Wonder Woman</li>
+            <li><input type="radio" name="superheros" value="flash">Flash</li>
+            <li><input type="radio" name="superheros" value="thor">Thor</li>
+            <li><input type="radio" name="superheros" value="hulk">Hulk</li>
+        </ul>
+        <p><label>Select your favourite video game</label></p>
+        <ul>
+          <li><input type="checkbox" name="videogames" value="fifa" checked="checked" >Fifa</li>
+          <li><input type="checkbox" name="videogames" value="nhl">NHL</li>
+          <li><input type="checkbox" name="videogames" value="resevil">Residen Evil</li>
+          <li><input type="checkbox" name="videogames" value="uncharted" checked="checked" >Uncharted</li>
+        </ul>
+        <input type="hidden" name="userid" value="2300" >
+        <p><input type="image" src="img/register_button.png" name="login" width="20%" alt="Register" ></p>
+      </fieldset>
+    </form>
+  </body>
+</html>
