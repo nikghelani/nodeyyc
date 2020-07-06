@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Exercise 15 - Create User</title>
+    <style>
+      li{
+        list-style-type:none;
+        margin-left: -20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Create User</h1>
+    <hr>
+    <form action="create_user.html" method="get" enctype="application/x-www-form-urlencoded" >
+      <p>
+        <label>Username:</label>
+        <input type="text" name="username" placeholder="username" pattern="^[a-zA-Z]+$" size="30" maxlength="12" required /> *Only letters
+      </p>
+      <p>
+        <label>Password:</label>
+        <input type="password" name="password" placeholder="password" pattern="\d+" size="30" maxlength="8" required /> *Only numbers
+      </p>
+      <fieldset>
+        <legend>User Form</legend>
+        <p>
+          <label for="birthdayid">Birthday:</label>
+          <input type="date" id="birthdayid" name="birthday" />
+        </p>
+        <p>
+          <label for="emailid">Email:</label>
+          <input type="email" id="emailid" name="email" required />
+        </p>
+        <p>
+          <label for="websiteid">Personal Site:</label>
+          <input type="url" id="websiteid" name="personalsite" />
+        </p>
+        <p><label>Select your favourite superheroe</label></p>
+        <ul>
+          <li><input type="radio" name="superheros" value="superman">Superman</li>
+          <li><input type="radio" name="superheros" value="batman" checked> Batman</li>
+          <li><input type="radio" name="superheros" value="wonderwoman"> Wonder Woman</li>
+          <li><input type="radio" name="superheros" value="flash"> Flash</li>
+          <li><input type="radio" name="superheros" value="thor"> Thor</li>
+          <li><input type="radio" name="superheros" value="hulk"> Hulk</li>
+        </ul>
+        <p><label>Select your favourite video game</label></p>
+        <ul>
+          <li><input type="checkbox" name="videogames" value="fifa" checked="checked" > Fifa</li>
+          <li><input type="checkbox" name="videogames" value="nhl"> NHL</li>
+          <li><input type="checkbox" name="videogames" value="resevil"> Residen Evil</li>
+          <li><input type="checkbox" name="videogames" value="uncharted" checked="checked" > Uncharted</li>
+        </ul>
+        <input type="hidden" name="userid" value="2300" >
+        <p><button name="submit" alt="Submit">Submit</button></p>
+      </fieldset>
+    </form>
+  </body>
+</html>
