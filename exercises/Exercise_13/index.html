@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Create User - Ex 13</title>
+    <style>
+      li{
+        list-style-type:none;
+        margin-left: -20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Create User</h1>
+    <hr>
+    <form action="#" method="post" enctype="multipart/form-data" >
+      <p>
+        <label for="nameid">Name:</label>
+        <input type="text" id="nameid" name="name" placeholder="name" size="30" maxlength="12">
+      </p>
+      <p>
+        <label for="passwordid">Password:</label>
+        <input type="password" id="passwordid" name="password" placeholder="password" size="30" maxlength="8">
+      </p>
+      <p><label for="selectionid">Please select one of the following:</label></p>
+      <select name="selection" id="selectionid">
+        <option value="deadpool">Deadpool</option>
+        <option value="batman_vs_superman">Batman v Superman</option>
+        <option value="civil_war">Captain America: Civil War</option>
+        <option value="doctor_strange">Doctor Strange</option>
+        <option value="suicide_squad">Suicide Squad</option>
+        <option value="apocalypse">X-Men: Apocalypse</option>
+        <option value="gotg_vol2">Guardians of the Galaxy Vol 2</option>
+        <option value="justice_league">Justice League</option>
+        <option value="logan">Logan</option>
+        <option value="homecoming">Spider-Man: Homecoming</option>
+        <option value="wonder_woman" selected>Wonder Woman</option>
+        <option value="thor_ragnarok">Thor: Ragnarok</option>
+        <option value="black_panther">Black Panther</option>
+      </select>
+      <p><label for="bioid">Biography:</label></p>
+      <p><textarea name="bio" id="bioid" cols="50" rows="10" placeholder="Please copy/paste or type your biography here"></textarea></p>
+      <p>
+        <label for="avatar">Choose a profile picture:</label>
+        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+      </p>
+      <button value="clear" name="clear">Clear Form</button>
+      <button value="add_user" name="add_user">Add new user</button>
+    </form>
+  </body>
+</html>
